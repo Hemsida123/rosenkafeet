@@ -3,24 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rosenkaféet – Mysigt café mitt i Göteborgs Trädgårdsförening</title>
-<meta name="description" content="Rosenkaféet ligger mitt bland rosorna i Göteborgs Trädgårdsförening. Frukost, fika, lunch och kvällar under träden. Öppet dagligen 10.00–19.30. Boka bröllop, fest och event.">
-<meta name="theme-color" content="#2E4433">
+<title>Rosenkaféet – Café &amp; kök i Göteborgs Trädgårdsförening</title>
+<meta name="description" content="Rosenkaféet ligger mitt bland rosorna i Göteborgs Trädgårdsförening. Frukost, fika, lunch och långa kvällar under träden. Öppet alla dagar 10.00–19.30. Bröllop, fest och konferens.">
+<meta name="theme-color" content="#1B2A19">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"CafeOrCoffeeShop",
-  "name":"Rosenkaféet",
-  "description":"Mysigt café och restaurang mitt i Göteborgs Trädgårdsförening. Frukost, fika, lunch, dryck och fest.",
+  "@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Rosenkaféet",
+  "description":"Café och kök mitt i Göteborgs Trädgårdsförening. Frukost, fika, lunch, dryck och fest.",
   "image":"https://rosenkafeet.se/wp-content/uploads/2025/04/12-1.jpg",
-  "telephone":"+4631802970",
-  "email":"info@rosenkafeet.se",
-  "servesCuisine":["Café","Svensk husmanskost","Fika"],
-  "priceRange":"$$",
+  "telephone":"+4631802970","email":"info@rosenkafeet.se",
+  "servesCuisine":["Café","Svensk husmanskost","Fika"],"priceRange":"$$",
   "address":{"@type":"PostalAddress","streetAddress":"Slussgatan 1","postalCode":"411 06","addressLocality":"Göteborg","addressCountry":"SE"},
   "geo":{"@type":"GeoCoordinates","latitude":57.7038,"longitude":11.9787},
   "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:00","closes":"19:30"}],
@@ -30,350 +26,413 @@
 
 <style>
 :root{
-  --cream:#FBF6EE;
-  --linen:#F2E9DB;
-  --sand:#E7DCC9;
-  --ink:#241F1A;
-  --body:#4A423A;
-  --muted:#8A7E70;
-  --green:#2E4433;
-  --green-dk:#1E2E22;
-  --green-lt:#5A7359;
-  --rose:#B0656C;
-  --rose-lt:#D9A0A3;
-  --gold:#B08542;
-  --line:rgba(36,31,26,.14);
-  --shadow:0 24px 60px -30px rgba(30,46,34,.45);
-  --r:2px;
+  --paper:#FBF8F2;
+  --shell:#F1E9DC;
+  --sand:#E5D9C6;
+  --ink:#1A1815;
+  --body:#4E4841;
+  --muted:#8D8478;
+  --forest:#1F3020;
+  --forest-2:#162417;
+  --moss:#51684C;
+  --rose:#A85F68;
+  --rose-2:#8F4D56;
+  --blush:#E0BDBD;
+  --line:rgba(26,24,21,.13);
+  --line-l:rgba(255,255,255,.16);
+  --pad:clamp(20px,5vw,52px);
+  --sec:clamp(72px,11vw,150px);
+  --shadow:0 30px 70px -34px rgba(20,32,20,.5);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{
-  background:var(--cream);color:var(--body);
-  font-family:'Jost',system-ui,sans-serif;font-weight:300;
-  font-size:clamp(1rem,.96rem + .2vw,1.08rem);line-height:1.75;
-  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  background:var(--paper);color:var(--body);
+  font-family:'Manrope',system-ui,-apple-system,sans-serif;font-weight:300;
+  font-size:clamp(.98rem,.94rem + .2vw,1.05rem);line-height:1.78;letter-spacing:.005em;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
 }
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:400;color:var(--ink);line-height:1.08;letter-spacing:-.015em}
-.wrap{width:min(1220px,92vw);margin:0 auto}
-.narrow{width:min(760px,92vw);margin:0 auto}
-section{position:relative}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
-/* ---------- utility ---------- */
-.eyebrow{
-  font-family:'Jost',sans-serif;font-size:.68rem;font-weight:500;letter-spacing:.28em;
-  text-transform:uppercase;color:var(--rose);display:flex;align-items:center;gap:14px;margin-bottom:20px;
+/* ---------- type ---------- */
+.d,h1,h2,h3{
+  font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;color:var(--ink);
+  line-height:1.02;letter-spacing:-.012em;
 }
-.eyebrow::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--rose-lt),transparent);max-width:120px}
-.eyebrow.c{justify-content:center}
-.eyebrow.c::after{display:none}
-.eyebrow.c::before{content:"";width:34px;height:1px;background:var(--rose-lt)}
-.lead{font-size:clamp(1.06rem,1rem + .4vw,1.24rem);line-height:1.72}
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.3,1),transform .9s cubic-bezier(.2,.7,.3,1)}
+h1 em,h2 em,h3 em,.d em{font-style:italic;font-weight:300}
+.kicker{
+  font-family:'Manrope',sans-serif;font-size:.6rem;font-weight:600;letter-spacing:.34em;
+  text-transform:uppercase;color:var(--rose);display:flex;align-items:center;gap:14px;margin-bottom:clamp(16px,2.4vw,26px);
+}
+.kicker::after{content:"";flex:1;max-width:96px;height:1px;background:currentColor;opacity:.45}
+.kicker.c{justify-content:center}
+.kicker.c::before{content:"";width:40px;height:1px;background:currentColor;opacity:.45}
+.kicker.c::after{max-width:40px}
+.h-xl{font-size:clamp(3.4rem,11.5vw,8.4rem)}
+.h-lg{font-size:clamp(2.5rem,1.6rem + 3.6vw,4.6rem)}
+.h-md{font-size:clamp(2rem,1.5rem + 2.4vw,3.2rem)}
+.h-sm{font-size:clamp(1.5rem,1.3rem + .9vw,2rem)}
+.lead{font-size:clamp(1.02rem,.98rem + .38vw,1.2rem);line-height:1.75;font-weight:300}
+.wrap{width:100%;max-width:1280px;margin:0 auto;padding-inline:var(--pad)}
+.narrow{width:100%;max-width:800px;margin:0 auto;padding-inline:var(--pad)}
+section{position:relative}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.16,.8,.3,1),transform 1s cubic-bezier(.16,.8,.3,1)}
 .reveal.in{opacity:1;transform:none}
 
+/* ---------- buttons ---------- */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  padding:15px 30px;border-radius:100px;font-family:'Jost',sans-serif;
-  font-size:.76rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
-  border:1px solid transparent;transition:all .35s ease;cursor:pointer;
+  min-height:54px;padding:0 32px;border-radius:100px;
+  font-family:'Manrope',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.2em;
+  text-transform:uppercase;border:1px solid transparent;
+  transition:background .4s ease,color .4s ease,border-color .4s ease,transform .4s ease;
+  -webkit-tap-highlight-color:transparent;
 }
-.btn-green{background:var(--green);color:#fff}
-.btn-green:hover{background:var(--green-dk);transform:translateY(-2px);box-shadow:0 14px 30px -14px rgba(30,46,34,.7)}
 .btn-rose{background:var(--rose);color:#fff}
-.btn-rose:hover{background:#9A555C;transform:translateY(-2px)}
-.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
-.btn-out{border-color:var(--line);color:var(--ink)}
-.btn-out:hover{border-color:var(--green);background:var(--green);color:#fff}
-
-/* rose divider */
-.rosemark{display:flex;align-items:center;justify-content:center;gap:16px;color:var(--rose-lt)}
-.rosemark span{height:1px;width:70px;background:currentColor;opacity:.7}
-
-/* ---------- nav ---------- */
-header{
-  position:fixed;top:0;left:0;right:0;z-index:900;
-  padding:20px 0;transition:all .4s ease;
+.btn-rose:hover{background:var(--rose-2);transform:translateY(-2px)}
+.btn-forest{background:var(--forest);color:#fff}
+.btn-forest:hover{background:var(--forest-2);transform:translateY(-2px)}
+.btn-line{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-dark-line{border-color:var(--line);color:var(--ink)}
+.btn-dark-line:hover{background:var(--forest);border-color:var(--forest);color:#fff}
+.arrowlink{
+  display:inline-flex;align-items:center;gap:10px;font-size:.66rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--forest);
 }
-header.solid{background:rgba(251,246,238,.94);backdrop-filter:blur(14px);padding:12px 0;box-shadow:0 1px 0 var(--line)}
-.navbar{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;flex-direction:column;line-height:1;color:#fff;transition:color .4s}
+.arrowlink svg{width:16px;transition:transform .4s ease}
+.arrowlink:hover svg{transform:translateX(6px)}
+
+/* ---------- header ---------- */
+header{position:fixed;inset:0 0 auto;z-index:900;padding:22px 0;transition:padding .4s ease,background .4s ease,box-shadow .4s ease}
+header::before{content:"";position:absolute;inset:0;background:var(--paper);opacity:0;transition:opacity .4s ease;border-bottom:1px solid var(--line)}
+header.solid{padding:11px 0}
+header.solid::before{opacity:1}
+.bar{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:block;color:#fff;transition:color .4s ease}
 header.solid .brand{color:var(--ink)}
-.brand b{font-family:'Fraunces',serif;font-weight:400;font-size:1.5rem;letter-spacing:-.01em;color:inherit}
-.brand i{font-style:normal;font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;opacity:.72;margin-top:5px}
+.brand b{display:block;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:1.62rem;letter-spacing:.005em;line-height:1;color:inherit}
+.brand i{display:block;font-style:normal;font-size:.5rem;letter-spacing:.36em;text-transform:uppercase;opacity:.7;margin-top:6px;font-weight:500}
 
-.nav{display:flex;align-items:center;gap:6px}
-.nav > li{position:relative;list-style:none}
-.nav a,.nav .top{
-  display:flex;align-items:center;gap:6px;padding:10px 14px;color:#fff;
-  font-size:.74rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
-  transition:opacity .3s;cursor:pointer;background:none;border:0;font-family:'Jost',sans-serif;
+.nav{display:flex;align-items:center;gap:2px;list-style:none}
+.nav > li{position:relative}
+.nav .lk{
+  display:flex;align-items:center;gap:7px;padding:12px 15px;color:#fff;
+  font-size:.66rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  transition:opacity .3s ease,color .4s ease;
 }
-header.solid .nav a,header.solid .nav .top{color:var(--ink)}
-.nav a:hover,.nav .top:hover{opacity:.62}
-.nav .top svg{width:9px;transition:transform .3s}
-.nav li:hover .top svg{transform:rotate(180deg)}
+header.solid .nav .lk{color:var(--ink)}
+.nav .lk:hover{opacity:.6}
+.nav .lk svg{width:8px;flex:none;transition:transform .35s ease}
+.nav li:hover .lk svg{transform:rotate(180deg)}
 .drop{
-  position:absolute;top:calc(100% + 6px);left:50%;transform:translate(-50%,10px);
-  background:var(--cream);min-width:236px;padding:10px;border-radius:6px;
-  box-shadow:0 26px 60px -22px rgba(30,46,34,.42);border:1px solid var(--line);
-  opacity:0;visibility:hidden;transition:all .3s ease;list-style:none;
+  position:absolute;top:calc(100% + 8px);left:50%;transform:translate(-50%,10px);
+  min-width:244px;padding:10px;list-style:none;background:var(--paper);
+  border:1px solid var(--line);border-radius:4px;box-shadow:0 30px 60px -26px rgba(20,32,20,.4);
+  opacity:0;visibility:hidden;transition:opacity .3s ease,transform .3s ease,visibility .3s;
 }
 .nav li:hover .drop{opacity:1;visibility:visible;transform:translate(-50%,0)}
-.drop a{color:var(--ink);padding:10px 14px;border-radius:4px;letter-spacing:.1em;font-size:.72rem;text-transform:none;font-weight:400}
-.drop a:hover{background:var(--linen);opacity:1}
-.navcta{padding:12px 24px !important;border:1px solid rgba(255,255,255,.6);border-radius:100px;font-size:.7rem !important}
-header.solid .navcta{border-color:var(--green);background:var(--green);color:#fff !important}
-header.solid .navcta:hover{background:var(--green-dk);opacity:1}
+.drop a{
+  display:block;padding:11px 14px;border-radius:3px;color:var(--ink);
+  font-size:.78rem;font-weight:400;letter-spacing:.03em;transition:background .25s ease;
+}
+.drop a:hover{background:var(--shell)}
+.navcta{margin-left:10px;padding:0 24px;min-height:44px;border:1px solid rgba(255,255,255,.55);border-radius:100px;
+  display:inline-flex;align-items:center;color:#fff;font-size:.63rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;transition:all .35s ease}
+.navcta:hover{background:#fff;color:var(--forest);border-color:#fff}
+header.solid .navcta{background:var(--forest);border-color:var(--forest)}
+header.solid .navcta:hover{background:var(--forest-2);border-color:var(--forest-2);color:#fff}
 
-.burger{display:none;width:44px;height:44px;align-items:center;justify-content:center;background:none;border:0;cursor:pointer}
-.burger span{display:block;width:24px;height:1.5px;background:#fff;position:relative;transition:.3s}
-header.solid .burger span{background:var(--ink)}
-.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:24px;height:1.5px;background:inherit;transition:.3s}
-.burger span::before{top:-7px}.burger span::after{top:7px}
-body.menu-open .burger span{background:transparent}
-body.menu-open .burger span::before{top:0;transform:rotate(45deg);background:var(--ink)}
-body.menu-open .burger span::after{top:0;transform:rotate(-45deg);background:var(--ink)}
+.burger{display:none;width:48px;height:48px;align-items:center;justify-content:center;margin-right:-12px}
+.burger i{display:block;width:26px;height:1px;background:#fff;position:relative;transition:background .3s ease}
+header.solid .burger i{background:var(--ink)}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0;width:26px;height:1px;background:inherit;transition:transform .35s ease,top .35s ease}
+.burger i::before{top:-8px}
+.burger i::after{top:8px}
+body.open .burger i{background:transparent}
+body.open .burger i::before{top:0;transform:rotate(45deg);background:var(--ink)}
+body.open .burger i::after{top:0;transform:rotate(-45deg);background:var(--ink)}
+
+/* mobile drawer */
+.drawer{
+  position:fixed;inset:0;z-index:880;background:var(--paper);
+  padding:96px var(--pad) calc(40px + env(safe-area-inset-bottom));
+  overflow-y:auto;overscroll-behavior:contain;
+  opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .4s ease,transform .5s cubic-bezier(.16,.8,.3,1),visibility .4s;
+  display:none;flex-direction:column;
+}
+body.open .drawer{opacity:1;visibility:visible;transform:none}
+body.open{overflow:hidden}
+.dnav{list-style:none;border-top:1px solid var(--line)}
+.dnav > li{border-bottom:1px solid var(--line)}
+.dnav .lk2{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:19px 0;font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:300;color:var(--ink);text-align:left;
+}
+.dnav .lk2 svg{width:11px;flex:none;color:var(--rose);transition:transform .35s ease}
+.dnav li.on .lk2 svg{transform:rotate(180deg)}
+.dsub{list-style:none;max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,.8,.3,1)}
+.dnav li.on .dsub{max-height:380px}
+.dsub a{display:block;padding:12px 0 12px 18px;border-left:1px solid var(--line);
+  font-size:.88rem;color:var(--body);letter-spacing:.02em}
+.dsub li:last-child a{padding-bottom:22px}
+.dfoot{margin-top:auto;padding-top:34px}
+.dfoot .btn{width:100%}
+.dmeta{margin-top:26px;display:grid;gap:8px;font-size:.8rem;color:var(--muted)}
+.dmeta b{color:var(--ink);font-weight:500}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:var(--green-dk)}
-.hero-img{position:absolute;inset:0}
-.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 58%;animation:slowzoom 22s ease-out forwards}
-@keyframes slowzoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:var(--forest-2)}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 60%;animation:zoomout 24s cubic-bezier(.2,.6,.3,1) forwards}
+@keyframes zoomout{from{transform:scale(1.1)}to{transform:scale(1)}}
 .hero::after{
-  content:"";position:absolute;inset:0;
+  content:"";position:absolute;inset:0;pointer-events:none;
   background:
-    linear-gradient(95deg,rgba(18,29,21,.86) 0%,rgba(18,29,21,.66) 34%,rgba(18,29,21,.3) 62%,rgba(18,29,21,.18) 100%),
-    linear-gradient(180deg,rgba(18,29,21,.66) 0%,rgba(18,29,21,.26) 32%,rgba(18,29,21,.52) 74%,rgba(18,29,21,.88) 100%);
+    linear-gradient(96deg,rgba(14,24,15,.9) 0%,rgba(14,24,15,.68) 32%,rgba(14,24,15,.3) 62%,rgba(14,24,15,.16) 100%),
+    linear-gradient(180deg,rgba(14,24,15,.7) 0%,rgba(14,24,15,.24) 30%,rgba(14,24,15,.5) 72%,rgba(14,24,15,.9) 100%);
 }
-.hero-in{position:relative;z-index:3;width:min(1220px,92vw);margin:0 auto;padding:clamp(130px,17vw,190px) 0 clamp(56px,9vw,110px);color:#fff}
-.hero-in .eyebrow{color:var(--rose-lt)}
-.hero-in .eyebrow::after{background:linear-gradient(90deg,rgba(217,160,163,.8),transparent)}
-.hero h1{
-  color:#fff;font-size:clamp(3.1rem,10vw,7.4rem);font-weight:300;letter-spacing:-.03em;
-  line-height:.92;margin-bottom:22px;
-}
-.hero h1 em{font-style:italic;font-weight:300;color:var(--rose-lt)}
-.hero p{max-width:520px;font-size:clamp(1.02rem,.96rem + .4vw,1.2rem);color:rgba(255,255,255,.9);line-height:1.7;margin-bottom:32px}
+.hero-in{position:relative;z-index:3;width:100%;max-width:1280px;margin:0 auto;padding:clamp(140px,20vw,190px) var(--pad) clamp(48px,7vw,96px);color:#fff}
+.hero .kicker{color:var(--blush)}
+.hero h1{color:#fff;margin-bottom:clamp(20px,3vw,30px)}
+.hero h1 em{color:var(--blush)}
+.hero p{max-width:34ch;color:rgba(255,255,255,.88);margin-bottom:clamp(28px,4vw,40px)}
 .hero-btns{display:flex;flex-wrap:wrap;gap:12px}
-.hero-strip{
-  position:relative;z-index:3;border-top:1px solid rgba(255,255,255,.2);
-  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.16);
-}
-.hero-strip div{background:rgba(20,32,23,.62);backdrop-filter:blur(6px);padding:20px 24px;color:#fff}
-.hero-strip b{display:block;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;opacity:.65;font-weight:400;margin-bottom:6px}
-.hero-strip p{margin:0;font-family:'Fraunces',serif;font-size:1rem;color:#fff;max-width:none}
-.scrollhint{position:absolute;right:max(4vw,20px);bottom:clamp(150px,17vw,205px);z-index:4;writing-mode:vertical-rl;
-  font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.6);display:flex;align-items:center;gap:12px}
-.scrollhint::after{content:"";width:1px;height:52px;background:linear-gradient(180deg,rgba(255,255,255,.6),transparent)}
+.hero-idx{position:relative;z-index:3;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-l)}
+.hero-idx div{padding:20px var(--pad);color:#fff;background:rgba(14,24,15,.5);backdrop-filter:blur(8px)}
+.hero-idx div + div{border-left:1px solid var(--line-l)}
+.hero-idx b{display:block;font-size:.54rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:7px}
+.hero-idx span{font-family:'Cormorant Garamond',serif;font-size:1.16rem;font-weight:400;letter-spacing:.01em}
+.cue{position:absolute;right:var(--pad);bottom:calc(clamp(48px,7vw,96px) + 92px);z-index:4;writing-mode:vertical-rl;
+  font-size:.54rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.55);
+  display:flex;align-items:center;gap:14px}
+.cue::after{content:"";width:1px;height:60px;background:linear-gradient(180deg,rgba(255,255,255,.55),transparent)}
 
-/* ---------- welcome ---------- */
-.welcome{padding:clamp(80px,11vw,140px) 0;background:var(--cream);text-align:center}
-.welcome h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.5rem);font-weight:300;margin-bottom:26px}
-.welcome h2 em{font-style:italic;color:var(--rose)}
-.welcome .lead{color:var(--body)}
-.welcome .lead + .lead{margin-top:18px}
-.signature{margin-top:34px;font-family:'Fraunces',serif;font-style:italic;font-size:1.15rem;color:var(--green-lt)}
+/* ---------- intro ---------- */
+.intro{padding:var(--sec) 0;text-align:center}
+.intro h2{margin-bottom:clamp(20px,3vw,30px)}
+.intro h2 em{color:var(--rose)}
+.intro .lead + .lead{margin-top:18px}
+.sig{margin-top:clamp(28px,4vw,40px);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.25rem;color:var(--moss)}
+.orn{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:clamp(28px,4vw,40px);color:var(--blush)}
+.orn i{height:1px;width:clamp(40px,10vw,80px);background:currentColor}
+.orn svg{width:16px;color:var(--rose);opacity:.8}
 
-/* ---------- about split ---------- */
-.split{padding:clamp(70px,9vw,120px) 0;background:var(--linen)}
-.split-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(34px,6vw,80px);align-items:center}
-.split-grid.rev .fig{order:2}
+/* ---------- split ---------- */
+.split{padding:var(--sec) 0;background:var(--shell)}
+.split .grid{display:grid;grid-template-columns:1.02fr 1fr;gap:clamp(32px,6vw,88px);align-items:center}
+.split.rev .fig{order:2}
 .fig{position:relative}
-.fig img{width:100%;height:clamp(360px,46vw,620px);object-fit:cover;border-radius:300px 300px 8px 8px;box-shadow:var(--shadow)}
-.fig .badge{
-  position:absolute;bottom:-22px;right:-14px;background:var(--cream);border:1px solid var(--line);
-  padding:18px 24px;border-radius:6px;text-align:center;box-shadow:0 18px 40px -22px rgba(30,46,34,.5);
+.fig img{width:100%;aspect-ratio:4/5;max-height:640px;object-fit:cover;border-radius:340px 340px 6px 6px;box-shadow:var(--shadow)}
+.tag{
+  position:absolute;right:clamp(6px,2vw,-18px);bottom:-20px;background:var(--paper);border:1px solid var(--line);
+  padding:16px 24px;border-radius:4px;text-align:center;box-shadow:0 22px 44px -26px rgba(20,32,20,.5);
 }
-.fig .badge b{display:block;font-family:'Fraunces',serif;font-size:1.5rem;color:var(--green);line-height:1}
-.fig .badge span{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-.split h2{font-size:clamp(1.9rem,1.4rem + 2.2vw,3.1rem);font-weight:300;margin-bottom:22px}
-.split h2 em{font-style:italic;color:var(--rose)}
+.tag b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:400;color:var(--forest);line-height:1}
+.tag span{display:block;margin-top:4px;font-size:.52rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.split h2{margin-bottom:clamp(18px,2.6vw,26px)}
+.split h2 em{color:var(--rose)}
 .split p + p{margin-top:16px}
-.pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
-.pills span{
-  padding:8px 17px;border:1px solid var(--line);border-radius:100px;
-  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);
-}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(24px,3.4vw,34px)}
+.chips span{padding:9px 18px;border:1px solid var(--line);border-radius:100px;
+  font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--moss)}
 
 /* ---------- menu ---------- */
-.menu{padding:clamp(80px,11vw,140px) 0;background:var(--green);color:rgba(255,255,255,.86)}
+.menu{padding:var(--sec) 0;background:var(--forest);color:rgba(255,255,255,.82)}
 .menu h2,.menu h3{color:#fff}
-.menu .eyebrow{color:var(--rose-lt)}
-.menu .eyebrow.c::before{background:var(--rose-lt)}
-.menu-head{text-align:center;max-width:660px;margin:0 auto clamp(44px,6vw,70px)}
-.menu-head h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.5rem);font-weight:300;margin-bottom:18px}
-.menu-head h2 em{font-style:italic;color:var(--rose-lt)}
-.tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:clamp(36px,5vw,56px)}
+.menu .kicker{color:var(--blush)}
+.mhead{max-width:700px;margin:0 auto clamp(36px,5vw,58px);text-align:center}
+.mhead h2{margin-bottom:18px}
+.mhead h2 em{color:var(--blush)}
+.tabwrap{margin-bottom:clamp(32px,4.6vw,52px)}
+.tabs{display:flex;gap:8px;justify-content:center;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tabs::-webkit-scrollbar{display:none}
 .tab{
-  background:none;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.72);
-  padding:11px 22px;border-radius:100px;cursor:pointer;font-family:'Jost',sans-serif;
-  font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;transition:all .3s;
+  flex:0 0 auto;min-height:44px;padding:0 22px;border:1px solid rgba(255,255,255,.22);border-radius:100px;
+  color:rgba(255,255,255,.7);font-size:.63rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  transition:all .35s ease;-webkit-tap-highlight-color:transparent;
 }
-.tab:hover{border-color:rgba(255,255,255,.6);color:#fff}
-.tab.on{background:var(--cream);border-color:var(--cream);color:var(--green-dk)}
+.tab:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+.tab.on{background:var(--paper);border-color:var(--paper);color:var(--forest-2)}
 .panel{display:none}
-.panel.on{display:block;animation:fade .5s ease}
-@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-.dishes{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(34px,5vw,70px)}
-.dish{display:flex;gap:16px;align-items:baseline;padding:19px 0;border-bottom:1px solid rgba(255,255,255,.14)}
-.dish .n{font-family:'Fraunces',serif;font-size:1.06rem;color:#fff;letter-spacing:0;white-space:nowrap}
-.dish .d{flex:1;font-size:.86rem;color:rgba(255,255,255,.6);line-height:1.5}
-.dish .dots{flex:1;border-bottom:1px dotted rgba(255,255,255,.3);min-width:18px;transform:translateY(-4px)}
-.dish .p{font-family:'Fraunces',serif;font-size:1rem;color:var(--rose-lt);white-space:nowrap}
-.dish-col{display:flex;flex-direction:column}
-.dish-wide{display:block;padding:19px 0;border-bottom:1px solid rgba(255,255,255,.14)}
-.dish-wide .row{display:flex;gap:14px;align-items:baseline}
-.dish-wide .sub{font-size:.84rem;color:rgba(255,255,255,.58);margin-top:6px;line-height:1.55;padding-right:12%}
-.menu-note{text-align:center;margin-top:clamp(36px,5vw,54px);font-size:.82rem;color:rgba(255,255,255,.55);letter-spacing:.04em}
+.panel.on{display:block;animation:fadein .55s cubic-bezier(.16,.8,.3,1)}
+@keyframes fadein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(36px,5.5vw,86px)}
+.col{display:flex;flex-direction:column}
+.item{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.13)}
+.item .top{display:flex;align-items:baseline;gap:12px}
+.item .nm{font-family:'Cormorant Garamond',serif;font-size:1.24rem;font-weight:400;color:#fff;letter-spacing:.005em}
+.item .dot{flex:1;min-width:14px;border-bottom:1px dotted rgba(255,255,255,.28);transform:translateY(-5px)}
+.item .pr{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;color:var(--blush);white-space:nowrap}
+.item .ds{margin-top:6px;font-size:.83rem;line-height:1.6;color:rgba(255,255,255,.56);max-width:44ch}
+.mnote{margin-top:clamp(30px,4vw,48px);text-align:center;font-size:.78rem;color:rgba(255,255,255,.5);letter-spacing:.04em}
 
-/* ---------- lunch band ---------- */
-.lunch{position:relative;padding:clamp(90px,12vw,150px) 0;overflow:hidden;color:#fff;text-align:center}
-.lunch .bg{position:absolute;inset:0}
-.lunch .bg img{width:100%;height:100%;object-fit:cover}
-.lunch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,32,23,.72),rgba(20,32,23,.82))}
-.lunch .wrap{position:relative;z-index:3}
-.lunch h2{color:#fff;font-size:clamp(2rem,1.4rem + 2.8vw,3.6rem);font-weight:300;margin-bottom:22px}
-.lunch h2 em{font-style:italic;color:var(--rose-lt)}
-.lunch p{max-width:600px;margin:0 auto 32px;color:rgba(255,255,255,.86)}
-.lunch .eyebrow{color:var(--rose-lt)}
-.lunch .eyebrow.c::before{background:var(--rose-lt)}
+/* ---------- band ---------- */
+.band{position:relative;padding:clamp(88px,13vw,164px) 0;overflow:hidden;color:#fff;text-align:center}
+.band .bg{position:absolute;inset:0}
+.band .bg img{width:100%;height:100%;object-fit:cover}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,24,15,.76),rgba(14,24,15,.84))}
+.band .narrow{position:relative;z-index:3}
+.band h2{color:#fff;margin-bottom:20px}
+.band h2 em{color:var(--blush)}
+.band .kicker{color:var(--blush)}
+.band p{color:rgba(255,255,255,.85);margin-bottom:clamp(26px,3.6vw,36px)}
 
 /* ---------- cards ---------- */
-.cards{padding:clamp(80px,11vw,140px) 0;background:var(--cream)}
-.cards-head{max-width:640px;margin:0 auto clamp(44px,6vw,68px);text-align:center}
-.cards-head h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.4rem);font-weight:300;margin-bottom:18px}
-.cards-head h2 em{font-style:italic;color:var(--rose)}
-.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.6vw,34px)}
-.card{background:var(--linen);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s ease,box-shadow .45s ease}
-.card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
-.card .im{height:250px;overflow:hidden;background:var(--sand)}
-.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.cards{padding:var(--sec) 0}
+.chead{max-width:700px;margin:0 auto clamp(36px,5vw,60px);text-align:center}
+.chead h2{margin-bottom:18px}
+.chead h2 em{color:var(--rose)}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,30px)}
+.card{background:var(--shell);border-radius:5px;overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .5s cubic-bezier(.16,.8,.3,1),box-shadow .5s ease}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.card .im{aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.16,.8,.3,1)}
 .card:hover .im img{transform:scale(1.06)}
-.card .bd{padding:30px 28px 34px;flex:1;display:flex;flex-direction:column}
-.card h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
-.card p{font-size:.95rem;flex:1;margin-bottom:20px}
-.card .lnk{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);display:inline-flex;align-items:center;gap:9px;transition:gap .3s}
-.card:hover .lnk{gap:15px}
+.card .bd{padding:clamp(24px,3vw,32px);display:flex;flex-direction:column;flex:1}
+.card h3{font-size:1.66rem;margin-bottom:12px}
+.card p{font-size:.92rem;flex:1;margin-bottom:22px}
+.note{margin-top:clamp(34px,5vw,58px);text-align:center;background:var(--shell);border-radius:5px;
+  padding:clamp(28px,4vw,46px) clamp(22px,4vw,52px)}
+.note h3{font-size:1.3rem;margin-bottom:12px}
+.note p{font-size:.9rem;max-width:64ch;margin:0 auto}
+.note .btn{margin-top:24px}
 
-/* ---------- green values ---------- */
-.values{padding:clamp(70px,9vw,120px) 0;background:var(--linen)}
-.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(26px,4vw,60px);counter-reset:v}
+/* ---------- values ---------- */
+.values{padding:var(--sec) 0;background:var(--shell)}
+.vhead{text-align:center;margin-bottom:clamp(34px,5vw,58px)}
+.vhead h2 em{color:var(--rose)}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px);counter-reset:v}
 .v{border-top:1px solid var(--line);padding-top:24px}
-.v::before{counter-increment:v;content:"0" counter(v);display:block;font-family:'Fraunces',serif;font-size:1.7rem;color:var(--rose);margin-bottom:14px;line-height:1}
-.v h3{font-size:1.22rem;font-weight:400;margin-bottom:10px}
-.v p{font-size:.93rem}
+.v::before{counter-increment:v;content:"0" counter(v);display:block;font-family:'Cormorant Garamond',serif;
+  font-size:1.9rem;font-weight:400;color:var(--rose);line-height:1;margin-bottom:14px}
+.v h3{font-size:1.36rem;margin-bottom:10px}
+.v p{font-size:.9rem}
 
 /* ---------- gallery ---------- */
-.gal{padding:clamp(70px,9vw,120px) 0;background:var(--cream)}
-.ggrid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:230px;gap:12px}
-.ggrid figure{overflow:hidden;border-radius:4px;background:var(--sand)}
-.ggrid img{width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+.gal{padding:var(--sec) 0}
+.ghead{text-align:center;margin-bottom:clamp(30px,4vw,48px)}
+.ghead h2 em{color:var(--rose)}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:clamp(150px,17vw,236px);gap:clamp(8px,1vw,14px)}
+.ggrid figure{overflow:hidden;border-radius:3px;background:var(--sand)}
+.ggrid img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,.8,.3,1)}
 .ggrid figure:hover img{transform:scale(1.07)}
 .ggrid .t{grid-row:span 2}
 .ggrid .w{grid-column:span 2}
 
 /* ---------- visit ---------- */
-.visit{padding:clamp(80px,11vw,140px) 0;background:var(--green-dk);color:rgba(255,255,255,.82)}
+.visit{padding:var(--sec) 0;background:var(--forest-2);color:rgba(255,255,255,.78)}
 .visit h2,.visit h3{color:#fff}
-.visit .eyebrow{color:var(--rose-lt)}
-.vwrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,80px);align-items:start}
-.visit h2{font-size:clamp(2rem,1.4rem + 2.6vw,3.4rem);font-weight:300;margin-bottom:20px}
-.visit h2 em{font-style:italic;color:var(--rose-lt)}
-.info{margin-top:34px}
-.irow{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14)}
-.irow .k{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.5);padding-top:5px}
-.irow .val{font-family:'Fraunces',serif;font-size:1.08rem;color:#fff}
-.irow .val a:hover{color:var(--rose-lt)}
-.irow .val small{display:block;font-family:'Jost',sans-serif;font-size:.84rem;color:rgba(255,255,255,.6);margin-top:4px;letter-spacing:.02em}
-.mapbox{border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,.16);height:100%;min-height:420px}
-.mapbox iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.28) sepia(.12)}
-.visit-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.visit .kicker{color:var(--blush)}
+.vwrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,84px);align-items:start}
+.visit h2{margin-bottom:20px}
+.visit h2 em{color:var(--blush)}
+.info{margin-top:clamp(28px,4vw,38px)}
+.row{display:grid;grid-template-columns:118px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--line-l)}
+.row .k{font-size:.55rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.46);padding-top:6px}
+.row .v2{font-family:'Cormorant Garamond',serif;font-size:1.16rem;font-weight:400;color:#fff}
+.row .v2 a{border-bottom:1px solid rgba(255,255,255,.25);transition:color .3s,border-color .3s}
+.row .v2 a:hover{color:var(--blush);border-color:var(--blush)}
+.row .v2 small{display:block;margin-top:5px;font-family:'Manrope',sans-serif;font-size:.8rem;font-weight:300;color:rgba(255,255,255,.55)}
+.vbtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(26px,3.6vw,36px)}
+.map{border-radius:5px;overflow:hidden;border:1px solid var(--line-l);height:100%;min-height:440px}
+.map iframe{display:block;width:100%;height:100%;min-height:440px;border:0;filter:grayscale(.3) sepia(.1)}
 
 /* ---------- footer ---------- */
-footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(96px,12vw,44px);border-top:1px solid rgba(255,255,255,.13)}
-.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:clamp(50px,6vw,74px) 0}
-.fbrand b{font-family:'Fraunces',serif;font-size:1.7rem;color:#fff;font-weight:400;display:block;margin-bottom:12px}
-.fbrand p{font-size:.92rem;max-width:330px}
-.fcol h4{color:#fff;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;font-family:'Jost',sans-serif;font-weight:500;margin-bottom:16px}
-.fcol a{display:block;padding:5px 0;font-size:.92rem;transition:color .3s}
-.fcol a:hover{color:var(--rose-lt)}
-.fbot{border-top:1px solid rgba(255,255,255,.13);padding:22px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.76rem;letter-spacing:.04em}
-.socials{display:flex;gap:10px;margin-top:20px}
-.socials a{width:38px;height:38px;border:1px solid rgba(255,255,255,.24);border-radius:50%;display:grid;place-items:center;transition:all .3s}
-.socials a:hover{background:var(--rose);border-color:var(--rose);color:#fff}
-.socials svg{width:16px;height:16px}
+footer{background:var(--forest-2);color:rgba(255,255,255,.52);border-top:1px solid var(--line-l);
+  padding-bottom:calc(env(safe-area-inset-bottom))}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:clamp(30px,4vw,50px);padding:clamp(48px,6vw,78px) 0}
+.fb b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:400;color:#fff;margin-bottom:12px}
+.fb p{font-size:.88rem;max-width:36ch}
+.soc{display:flex;gap:10px;margin-top:22px}
+.soc a{width:42px;height:42px;border:1px solid var(--line-l);border-radius:50%;display:grid;place-items:center;
+  color:rgba(255,255,255,.7);transition:all .35s ease}
+.soc a:hover{background:var(--rose);border-color:var(--rose);color:#fff}
+.soc svg{width:16px;height:16px}
+.fc h4{color:#fff;font-family:'Manrope',sans-serif;font-size:.55rem;font-weight:600;letter-spacing:.26em;
+  text-transform:uppercase;margin-bottom:16px}
+.fc a{display:block;padding:6px 0;font-size:.88rem;transition:color .3s ease}
+.fc a:hover{color:var(--blush)}
+.fbot{border-top:1px solid var(--line-l);padding:20px 0;display:flex;flex-wrap:wrap;
+  justify-content:space-between;gap:10px;font-size:.72rem;letter-spacing:.03em}
 
 /* ---------- mobile bar ---------- */
 .mbar{
-  position:fixed;left:0;right:0;bottom:0;z-index:800;display:none;
-  background:rgba(30,46,34,.97);backdrop-filter:blur(12px);
-  padding:11px 12px calc(11px + env(safe-area-inset-bottom));
-  gap:9px;border-top:1px solid rgba(255,255,255,.14);
+  position:fixed;left:0;right:0;bottom:0;z-index:870;display:none;gap:6px;
+  background:rgba(22,36,23,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line-l);
+  padding:9px 10px calc(9px + env(safe-area-inset-bottom));
 }
 .mbar a{
-  flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 4px;color:#fff;
-  font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;border-radius:6px;
+  flex:1;min-height:50px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  border-radius:6px;color:#fff;font-size:.54rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  -webkit-tap-highlight-color:transparent;
 }
 .mbar a.hi{background:var(--rose)}
-.mbar svg{width:17px;height:17px}
+.mbar svg{width:18px;height:18px}
 
-/* ---------- responsive ---------- */
-@media(max-width:1000px){
-  .cgrid,.vgrid{grid-template-columns:1fr 1fr}
-  .ggrid{grid-template-columns:repeat(2,1fr)}
+/* ============ RESPONSIVE ============ */
+@media(max-width:1080px){
+  .cgrid{grid-template-columns:1fr 1fr}
+  .vgrid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:900px){
+  .nav,.navcta{display:none}
   .burger{display:flex}
-  .nav{
-    position:fixed;inset:0;top:0;background:var(--cream);flex-direction:column;
-    align-items:stretch;justify-content:flex-start;padding:96px 7vw 40px;gap:0;
-    transform:translateX(100%);transition:transform .45s cubic-bezier(.4,0,.2,1);overflow-y:auto;
-  }
-  body.menu-open .nav{transform:none}
-  body.menu-open{overflow:hidden}
-  .nav a,.nav .top{color:var(--ink) !important;font-size:.9rem;padding:16px 0;width:100%;justify-content:space-between;letter-spacing:.1em}
-  .nav > li{border-bottom:1px solid var(--line)}
-  .drop{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:0;background:none;
-    padding:0 0 12px;display:none;min-width:0}
-  .nav li.open .drop{display:block}
-  .nav li:hover .drop{transform:none}
-  .nav li.open .top svg{transform:rotate(180deg)}
-  .drop a{padding:11px 0 11px 16px;font-size:.84rem;color:var(--body) !important;border-left:1px solid var(--line)}
-  .navcta{border:1px solid var(--green) !important;background:var(--green);color:#fff !important;
-    justify-content:center !important;margin-top:22px;border-radius:100px}
-  .hero-strip{grid-template-columns:1fr}
-  .hero-strip div{padding:14px 20px;display:flex;align-items:baseline;gap:14px}
-  .hero-strip b{margin:0;min-width:88px}
-  .scrollhint{display:none}
-  .split-grid{grid-template-columns:1fr}
-  .split-grid.rev .fig{order:0}
-  .fig img{border-radius:220px 220px 8px 8px;height:clamp(320px,72vw,460px)}
-  .fig .badge{right:14px;bottom:-18px}
-  .dishes{grid-template-columns:1fr}
-  .cgrid,.vgrid{grid-template-columns:1fr}
-  .vwrap{grid-template-columns:1fr}
-  .mapbox{min-height:320px}
-  .mapbox iframe{min-height:320px}
-  .fgrid{grid-template-columns:1fr;gap:34px}
+  .drawer{display:flex}
+  .hero-idx{grid-template-columns:1fr}
+  .hero-idx div + div{border-left:0;border-top:1px solid var(--line-l)}
+  .hero-idx div{display:flex;align-items:baseline;gap:16px;padding:13px var(--pad)}
+  .hero-idx b{margin:0;min-width:80px}
+  .cue{display:none}
+  .split .grid{grid-template-columns:1fr;gap:clamp(46px,8vw,64px)}
+  .split.rev .fig{order:0}
+  .fig img{aspect-ratio:3/4;max-height:none;border-radius:min(46vw,260px) min(46vw,260px) 5px 5px}
+  .tag{right:0;bottom:-18px}
+  .cols{grid-template-columns:1fr;gap:0}
+  .cgrid{grid-template-columns:1fr;gap:18px}
+  .card .im{aspect-ratio:16/10}
+  .vgrid{grid-template-columns:1fr;gap:26px}
+  .vwrap{grid-template-columns:1fr;gap:36px}
+  .map,.map iframe{min-height:300px}
+  .fgrid{grid-template-columns:1fr 1fr;gap:36px}
+  .fb{grid-column:1 / -1}
+  footer{padding-bottom:calc(78px + env(safe-area-inset-bottom))}
   .mbar{display:flex}
-  .ggrid{grid-auto-rows:170px}
 }
-@media(max-width:560px){
-  .hero h1{font-size:clamp(2.7rem,13vw,4rem)}
-  .dish{flex-wrap:wrap}
-  .dish .dots{display:none}
-  .irow{grid-template-columns:1fr;gap:4px}
-  .btn{padding:14px 24px;font-size:.72rem}
+@media(max-width:760px){
+  .tabs{justify-content:flex-start;margin-inline:calc(-1 * var(--pad));padding:2px var(--pad) 6px;
+    scroll-snap-type:x proximity}
+  .tab{scroll-snap-align:start}
+  .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:min(38vw,190px)}
+  .kicker{font-size:.56rem;letter-spacing:.28em}
+  .kicker::after{max-width:52px}
+}
+@media(max-width:600px){
+  .hero{min-height:100svh}
+  .hero p{max-width:none}
   .hero-btns{flex-direction:column;align-items:stretch}
   .hero-btns .btn{width:100%}
+  .band .btn{width:100%;max-width:340px}
+  .note .btn{width:100%;max-width:340px}
+  .row{grid-template-columns:1fr;gap:2px;padding:15px 0}
+  .row .k{padding-top:0}
+  .vbtns{flex-direction:column;align-items:stretch}
+  .vbtns .btn{width:100%}
+  .fbot{flex-direction:column;gap:6px;text-align:left}
+  .dnav .lk2{font-size:1.5rem;padding:17px 0}
+}
+@media(max-width:420px){
+  .fgrid{grid-template-columns:1fr}
+  .ggrid{grid-auto-rows:min(42vw,180px)}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none !important;transition:none !important}
   .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
 }
 </style>
 </head>
@@ -381,27 +440,24 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
 
 <!-- ============ HEADER ============ -->
 <header id="hd">
-  <div class="wrap navbar">
-    <a href="#top" class="brand">
-      <b>Rosenkaféet</b>
-      <i>Göteborgs Trädgårdsförening</i>
-    </a>
+  <div class="wrap bar">
+    <a href="#top" class="brand"><b>Rosenkaféet</b><i>Trädgårdsföreningen · Göteborg</i></a>
 
-    <ul class="nav" id="nav">
-      <li><a href="#om">Om oss</a></li>
+    <ul class="nav">
+      <li><a href="#om" class="lk">Om oss</a></li>
       <li>
-        <button class="top">Meny <svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4"/></svg></button>
+        <span class="lk">Meny <svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5"/></svg></span>
         <ul class="drop">
           <li><a href="#meny">Fika &amp; bakverk</a></li>
           <li><a href="#meny">Smörgåsar</a></li>
           <li><a href="#meny">Varmrätter</a></li>
           <li><a href="#meny">Sallader</a></li>
+          <li><a href="#meny">Dryck &amp; cocktails</a></li>
           <li><a href="#lunch">Veckans trädgårdslunch</a></li>
-          <li><a href="#glass">Glass &amp; våfflor</a></li>
         </ul>
       </li>
       <li>
-        <button class="top">Fest &amp; event <svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4"/></svg></button>
+        <span class="lk">Fest &amp; event <svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5"/></svg></span>
         <ul class="drop">
           <li><a href="#fest">Bröllop</a></li>
           <li><a href="#fest">Fest &amp; student</a></li>
@@ -409,65 +465,108 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
           <li><a href="#fest">Beställningsmeny</a></li>
         </ul>
       </li>
-      <li><a href="#gront">Vårt gröna val</a></li>
-      <li><a href="#hittahit">Hitta hit</a></li>
+      <li><a href="#glass" class="lk">Glass &amp; våfflor</a></li>
+      <li><a href="#hittahit" class="lk">Hitta hit</a></li>
       <li><a href="#hittahit" class="navcta">Boka bord</a></li>
     </ul>
 
-    <button class="burger" id="burger" aria-label="Meny"><span></span></button>
+    <button class="burger" id="burger" aria-label="Öppna meny" aria-expanded="false"><i></i></button>
   </div>
 </header>
 
+<!-- ============ MOBILE DRAWER ============ -->
+<div class="drawer" id="drawer">
+  <ul class="dnav" id="dnav">
+    <li><a href="#om" class="lk2">Om oss</a></li>
+    <li>
+      <button class="lk2">Meny <svg viewBox="0 0 12 7" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      <ul class="dsub">
+        <li><a href="#meny">Fika &amp; bakverk</a></li>
+        <li><a href="#meny">Smörgåsar</a></li>
+        <li><a href="#meny">Varmrätter</a></li>
+        <li><a href="#meny">Sallader</a></li>
+        <li><a href="#meny">Dryck &amp; cocktails</a></li>
+        <li><a href="#lunch">Veckans trädgårdslunch</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="lk2">Fest &amp; event <svg viewBox="0 0 12 7" fill="none"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      <ul class="dsub">
+        <li><a href="#fest">Bröllop</a></li>
+        <li><a href="#fest">Fest &amp; student</a></li>
+        <li><a href="#fest">Konferens &amp; möten</a></li>
+        <li><a href="#fest">Beställningsmeny</a></li>
+      </ul>
+    </li>
+    <li><a href="#glass" class="lk2">Glass &amp; våfflor</a></li>
+    <li><a href="#gront" class="lk2">Vårt gröna val</a></li>
+    <li><a href="#hittahit" class="lk2">Hitta hit</a></li>
+  </ul>
+
+  <div class="dfoot">
+    <a href="tel:+4631802970" class="btn btn-forest">Ring 031–80 29 70</a>
+    <div class="dmeta">
+      <span><b>Öppet</b> · alla dagar 10.00–19.30</span>
+      <span><b>Adress</b> · Slussgatan 1, 411 06 Göteborg</span>
+      <span><b>E-post</b> · info@rosenkafeet.se</span>
+    </div>
+  </div>
+</div>
+
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <div class="hero-img">
-    <img src="https://rosenkafeet.se/wp-content/uploads/2025/04/12-1.jpg" alt="Rosenkaféet i Göteborgs Trädgårdsförening, omgivet av grönska och rosor" fetchpriority="high" decoding="async">
+  <div class="hero-bg">
+    <img src="https://rosenkafeet.se/wp-content/uploads/2025/04/12-1.jpg" alt="Rosenkaféet i Göteborgs Trädgårdsförening omgivet av grönska" fetchpriority="high" decoding="async">
   </div>
 
   <div class="hero-in">
-    <div class="eyebrow">Sedan länge · mitt bland rosorna</div>
-    <h1>Ett andetag<br>mitt i <em>staden</em></h1>
-    <p>Rosenkaféet ligger inbäddat i Göteborgs Trädgårdsförening. Här doftar det nybakat och rosor, kaffet är hållbart odlat och allt lagas från grunden. Kom som du är – stanna så länge du vill.</p>
+    <p class="kicker">Mitt bland rosorna sedan alltid</p>
+    <h1 class="h-xl">Ett andetag<br>mitt i <em>staden</em></h1>
+    <p class="lead">Rosenkaféet ligger inbäddat i Göteborgs Trädgårdsförening. Här doftar det nybakat och rosor, kaffet är hållbart odlat och allt lagas från grunden.</p>
     <div class="hero-btns">
       <a href="#meny" class="btn btn-rose">Se menyn</a>
-      <a href="#fest" class="btn btn-ghost">Boka fest &amp; event</a>
+      <a href="#fest" class="btn btn-line">Boka fest &amp; event</a>
     </div>
   </div>
 
-  <div class="scrollhint">Scrolla</div>
+  <div class="cue">Scrolla</div>
 
-  <div class="hero-strip">
-    <div><b>Öppettider</b><p>Alla dagar 10.00–19.30</p></div>
-    <div><b>Hitta hit</b><p>Slussgatan 1, Göteborg</p></div>
-    <div><b>Ring oss</b><p><a href="tel:+4631802970">031–80 29 70</a></p></div>
+  <div class="hero-idx">
+    <div><b>Öppettider</b><span>Alla dagar 10.00–19.30</span></div>
+    <div><b>Adress</b><span>Slussgatan 1, Göteborg</span></div>
+    <div><b>Telefon</b><span><a href="tel:+4631802970">031–80 29 70</a></span></div>
   </div>
 </section>
 
-<!-- ============ WELCOME ============ -->
-<section class="welcome">
+<!-- ============ INTRO ============ -->
+<section class="intro">
   <div class="narrow reveal">
-    <div class="eyebrow c">Varmt välkomna</div>
-    <h2>Rosenkaféet får <em>nytt liv</em></h2>
-    <p class="lead">Vi är de nya ägarna – och vi har ett enkelt löfte. Riktig mat lagad från grunden, bakverk ur egen ugn, kaffe bryggt av skickliga baristor och en plats där man faktiskt vill bli sittande.</p>
+    <p class="kicker c">Varmt välkomna</p>
+    <h2 class="h-lg">Rosenkaféet får <em>nytt liv</em></h2>
+    <p class="lead">Vi är de nya ägarna — och vi har ett enkelt löfte. Riktig mat lagad från grunden, bakverk ur egen ugn, kaffe bryggt av skickliga baristor och en plats där man faktiskt vill bli sittande.</p>
     <p class="lead">Frukost i morgonsolen. Fika under träden. Lunch med säsongens råvaror. En kall dryck när kvällen blir lång och ljus.</p>
-    <div class="signature">Vi ses bland rosorna · Rosenkaféet</div>
-    <div class="rosemark" style="margin-top:34px"><span></span>❧<span></span></div>
+    <p class="sig">Vi ses bland rosorna · Rosenkaféet</p>
+    <div class="orn">
+      <i></i>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c2.8 0 5 2.1 5 4.8 0 1.3-.5 2.4-1.3 3.3.9.8 1.5 2 1.5 3.3 0 2.5-2.1 4.6-4.7 4.6-1 0-1.9-.3-2.6-.8-.7.5-1.6.8-2.6.8C4.6 19 2.5 17 2.5 14.5c0-1.3.6-2.5 1.5-3.3C3.2 10.3 2.7 9.1 2.7 7.8 2.7 5.1 5 3 7.8 3c.8 0 1.5.2 2.2.5.6-.3 1.3-.5 2-.5z" opacity=".85"/></svg>
+      <i></i>
+    </div>
   </div>
 </section>
 
 <!-- ============ OM OSS ============ -->
 <section class="split" id="om">
-  <div class="wrap split-grid">
+  <div class="wrap grid">
     <div class="fig reveal">
-      <img src="https://rosenkafeet.se/wp-content/uploads/2025/04/Aho-53-1.jpg" alt="Varm och mysig interiör på Rosenkaféet med gäster runt borden" loading="lazy" decoding="async">
-      <div class="badge"><b>10–19.30</b><span>Alla dagar</span></div>
+      <img src="https://rosenkafeet.se/wp-content/uploads/2025/04/Aho-53-1.jpg" alt="Varm interiör på Rosenkaféet med gäster runt borden" loading="lazy" decoding="async">
+      <div class="tag"><b>10–19.30</b><span>Alla dagar</span></div>
     </div>
     <div class="reveal">
-      <div class="eyebrow">Om oss</div>
-      <h2>Trägolv, levande ljus<br>och <em>öppna dörrar</em></h2>
-      <p>Kaféet ligger i den gamla trähusslängan mitt i Trädgårdsföreningen – en av Europas bäst bevarade 1800-talsparker. Innanför dörrarna är det varmt trä, mjuka lampor och sorlet av folk som har det bra.</p>
+      <p class="kicker">Om oss</p>
+      <h2 class="h-md">Trägolv, mjukt ljus<br>och <em>öppna dörrar</em></h2>
+      <p>Kaféet ligger i den gamla trähusslängan mitt i Trädgårdsföreningen — en av Europas bäst bevarade 1800-talsparker. Innanför dörrarna är det varmt trä, låga lampor och sorlet av folk som har det bra.</p>
       <p>Utanför breder rosariet ut sig med tusentals rosor. Vi dukar upp under parasollerna så fort vädret tillåter, och när det inte gör det finns det alltid en plats inne med utsikt över grönskan.</p>
-      <div class="pills">
+      <div class="chips">
         <span>Bakat på plats</span>
         <span>Hållbart kaffe</span>
         <span>Uteservering</span>
@@ -481,133 +580,131 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
 <!-- ============ MENY ============ -->
 <section class="menu" id="meny">
   <div class="wrap">
-    <div class="menu-head reveal">
-      <div class="eyebrow c">Vår meny</div>
-      <h2>Från frukost<br>till <em>sen eftermiddag</em></h2>
-      <p>Allt lagas från grunden med råvaror vi själva gillar – gärna ekologiska och lokalproducerade. Enkla smaker med mycket omtanke.</p>
+    <div class="mhead reveal">
+      <p class="kicker c">Vår meny</p>
+      <h2 class="h-lg">Från frukost till<br><em>sen eftermiddag</em></h2>
+      <p>Allt lagas från grunden med råvaror vi själva gillar — gärna ekologiska och lokalproducerade. Enkla smaker med mycket omtanke.</p>
     </div>
 
-    <div class="tabs reveal">
-      <button class="tab on" data-t="fika">Fika &amp; bakverk</button>
-      <button class="tab" data-t="smorgas">Smörgåsar</button>
-      <button class="tab" data-t="varm">Varmrätter</button>
-      <button class="tab" data-t="sallad">Sallader</button>
-      <button class="tab" data-t="dryck">Dryck</button>
+    <div class="tabwrap reveal">
+      <div class="tabs" role="tablist">
+        <button class="tab on" data-t="fika">Fika &amp; bakverk</button>
+        <button class="tab" data-t="smorgas">Smörgåsar</button>
+        <button class="tab" data-t="varm">Varmrätter</button>
+        <button class="tab" data-t="sallad">Sallader</button>
+        <button class="tab" data-t="dryck">Dryck</button>
+      </div>
     </div>
 
-    <!-- FIKA -->
     <div class="panel on" id="p-fika">
-      <div class="dishes reveal">
-        <div class="dish-col">
-          <div class="dish"><span class="n">Kanelbulle</span><span class="dots"></span><span class="p">44 kr</span></div>
-          <div class="dish"><span class="n">Kardemummabulle</span><span class="dots"></span><span class="p">44 kr</span></div>
-          <div class="dish"><span class="n">Hallongrotta</span><span class="dots"></span><span class="p">39 kr</span></div>
-          <div class="dish"><span class="n">Chokladboll</span><span class="dots"></span><span class="p">39 kr</span></div>
-          <div class="dish"><span class="n">Kokostopp</span><span class="dots"></span><span class="p">39 kr</span></div>
-          <div class="dish"><span class="n">Chokladcookie</span><span class="dots"></span><span class="p">40 kr</span></div>
-          <div class="dish"><span class="n">Chokladbiskvi</span><span class="dots"></span><span class="p">48 kr</span></div>
+      <div class="cols reveal">
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Kanelbulle</span><span class="dot"></span><span class="pr">44 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Kardemummabulle</span><span class="dot"></span><span class="pr">44 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Hallongrotta</span><span class="dot"></span><span class="pr">39 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Chokladboll</span><span class="dot"></span><span class="pr">39 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Kokostopp</span><span class="dot"></span><span class="pr">39 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Chokladcookie</span><span class="dot"></span><span class="pr">40 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Chokladbiskvi</span><span class="dot"></span><span class="pr">48 kr</span></div></div>
         </div>
-        <div class="dish-col">
-          <div class="dish"><span class="n">Morotskaka</span><span class="dots"></span><span class="p">55 kr</span></div>
-          <div class="dish"><span class="n">Prinsesstårta</span><span class="dots"></span><span class="p">65 kr</span></div>
-          <div class="dish"><span class="n">Bakad cheesecake</span><span class="dots"></span><span class="p">65 kr</span></div>
-          <div class="dish"><span class="n">Dansk chokladbakelse</span><span class="dots"></span><span class="p">65 kr</span></div>
-          <div class="dish"><span class="n">Moussetårta</span><span class="dots"></span><span class="p">65 kr</span></div>
-          <div class="dish"><span class="n">Varm bärpaj med vaniljsås</span><span class="dots"></span><span class="p">75 kr</span></div>
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Morotskaka</span><span class="dot"></span><span class="pr">55 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Prinsesstårta</span><span class="dot"></span><span class="pr">65 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Bakad cheesecake</span><span class="dot"></span><span class="pr">65 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Dansk chokladbakelse</span><span class="dot"></span><span class="pr">65 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Moussetårta</span><span class="dot"></span><span class="pr">65 kr</span></div></div>
+          <div class="item"><div class="top"><span class="nm">Varm bärpaj</span><span class="dot"></span><span class="pr">75 kr</span></div><p class="ds">Med vaniljsås</p></div>
         </div>
       </div>
     </div>
 
-    <!-- SMÖRGÅSAR -->
     <div class="panel" id="p-smorgas">
-      <div class="dishes reveal">
-        <div class="dish-col">
-          <div class="dish-wide"><div class="row"><span class="n">Nybakad surdegsfralla</span><span class="dots"></span><span class="p">55 kr</span></div><div class="sub">Med lagrad ost</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Fralla ost &amp; skinka</span><span class="dots"></span><span class="p">55 kr</span></div><div class="sub">Klassikern, alltid nybakad</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Fralla med goudaost</span><span class="dots"></span><span class="p">49 kr</span></div><div class="sub">Enkelt och gott</div></div>
+      <div class="cols reveal">
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Nybakad surdegsfralla</span><span class="dot"></span><span class="pr">55 kr</span></div><p class="ds">Med lagrad ost</p></div>
+          <div class="item"><div class="top"><span class="nm">Fralla ost &amp; skinka</span><span class="dot"></span><span class="pr">55 kr</span></div><p class="ds">Klassikern, alltid nybakad</p></div>
+          <div class="item"><div class="top"><span class="nm">Fralla med goudaost</span><span class="dot"></span><span class="pr">49 kr</span></div><p class="ds">Enkelt och gott</p></div>
         </div>
-        <div class="dish-col">
-          <div class="dish-wide"><div class="row"><span class="n">Focaccia</span><span class="dots"></span><span class="p">105 kr</span></div><div class="sub">Pistagepesto, citronricotta &amp; mortadella</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Grön ärtpesto</span><span class="dots"></span><span class="p">75 kr</span></div><div class="sub">Med mynta</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Skagenröra</span><span class="dots"></span><span class="p">115 kr</span></div><div class="sub">På rågbröd</div></div>
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Focaccia</span><span class="dot"></span><span class="pr">105 kr</span></div><p class="ds">Pistagepesto, citronricotta &amp; mortadella</p></div>
+          <div class="item"><div class="top"><span class="nm">Grön ärtpesto</span><span class="dot"></span><span class="pr">75 kr</span></div><p class="ds">Med mynta</p></div>
+          <div class="item"><div class="top"><span class="nm">Skagenröra</span><span class="dot"></span><span class="pr">115 kr</span></div><p class="ds">På rågbröd</p></div>
         </div>
       </div>
     </div>
 
-    <!-- VARMRÄTTER -->
     <div class="panel" id="p-varm">
-      <div class="dishes reveal">
-        <div class="dish-col">
-          <div class="dish-wide"><div class="row"><span class="n">Hemgjorda köttbullar</span><span class="dots"></span><span class="p">220 kr</span></div><div class="sub">Potatismos, rårörda lingon, inlagd gurka och gräddsås</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Äppelbakad palsternacka</span><span class="dots"></span><span class="p">165 kr</span></div><div class="sub">Hemgjord hummus, smörad äppelsky, gröna ärtor och groddar</div></div>
+      <div class="cols reveal">
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Hemgjorda köttbullar</span><span class="dot"></span><span class="pr">220 kr</span></div><p class="ds">Potatismos, rårörda lingon, inlagd gurka och gräddsås</p></div>
+          <div class="item"><div class="top"><span class="nm">Äppelbakad palsternacka</span><span class="dot"></span><span class="pr">165 kr</span></div><p class="ds">Hemgjord hummus, smörad äppelsky, gröna ärtor och groddar</p></div>
         </div>
-        <div class="dish-col">
-          <div class="dish-wide"><div class="row"><span class="n">Färskpotatissallad &amp; rödbetsgravad lax</span><span class="dots"></span><span class="p">235 kr</span></div><div class="sub">Egengravad lax, färskpotatis, rädisa, sockerärtor, pak choi, spenat, picklad morot, dillkräm, rågsmul &amp; citron</div></div>
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Färskpotatissallad &amp; rödbetsgravad lax</span><span class="dot"></span><span class="pr">235 kr</span></div><p class="ds">Egengravad lax, färskpotatis, rädisa, sockerärtor, pak choi, spenat, picklad morot, dillkräm, rågsmul &amp; citron</p></div>
         </div>
       </div>
     </div>
 
-    <!-- SALLADER -->
     <div class="panel" id="p-sallad">
-      <div class="dishes reveal">
-        <div class="dish-col">
-          <div class="dish-wide"><div class="row"><span class="n">Kallrökt lax</span><span class="dots"></span><span class="p">225 kr</span></div><div class="sub">Spenat, kokt ägg, citronette, rostad palsternacka, picklad rödlök, inlagd morot, rostade pumpafrön &amp; dillkräm</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Handskalade räkor</span><span class="dots"></span><span class="p">225 kr</span></div><div class="sub">Romansallad, dillkräm, surdegskrutonger, rimmad gurka, kokt ägg &amp; dill</div></div>
+      <div class="cols reveal">
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Kallrökt lax</span><span class="dot"></span><span class="pr">225 kr</span></div><p class="ds">Spenat, kokt ägg, citronette, rostad palsternacka, picklad rödlök, inlagd morot, rostade pumpafrön &amp; dillkräm</p></div>
+          <div class="item"><div class="top"><span class="nm">Handskalade räkor</span><span class="dot"></span><span class="pr">225 kr</span></div><p class="ds">Romansallad, dillkräm, surdegskrutonger, rimmad gurka, kokt ägg &amp; dill</p></div>
         </div>
-        <div class="dish-col">
-          <div class="dish-wide"><div class="row"><span class="n">Caesarsallad</span><span class="dots"></span><span class="p">235 kr</span></div><div class="sub">Romansallad, kyckling, bacon, surdegskrutonger, parmesan &amp; hemmagjord caesardressing</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Bakad rotselleri</span><span class="dots"></span><span class="p">165 kr</span></div><div class="sub">Rotsellerikräm, saltbakad rotselleri, rostad morot, spenat, picklad morot, bönboll &amp; groddar</div></div>
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Caesarsallad</span><span class="dot"></span><span class="pr">235 kr</span></div><p class="ds">Romansallad, kyckling, bacon, surdegskrutonger, parmesan &amp; hemmagjord caesardressing</p></div>
+          <div class="item"><div class="top"><span class="nm">Bakad rotselleri</span><span class="dot"></span><span class="pr">165 kr</span></div><p class="ds">Rotsellerikräm, saltbakad rotselleri, rostad morot, spenat, picklad morot, bönboll &amp; groddar</p></div>
         </div>
       </div>
     </div>
 
-    <!-- DRYCK -->
     <div class="panel" id="p-dryck">
-      <div class="dishes reveal">
-        <div class="dish-col">
-          <div class="dish-wide"><div class="row"><span class="n">Kaffe &amp; espresso</span></div><div class="sub">Bryggkaffe, latte, cappuccino och flat white – bönor från hållbara odlingar, bryggda av våra baristor.</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Te &amp; varm choklad</span></div><div class="sub">Lösviktste i flera sorter och varm choklad med grädde.</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Alkoholfritt</span></div><div class="sub">Färskpressat, hemgjord lemonad, läsk och alkoholfri öl &amp; bubbel.</div></div>
+      <div class="cols reveal">
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Kaffe &amp; espresso</span></div><p class="ds">Bryggkaffe, latte, cappuccino och flat white — bönor från hållbara odlingar, bryggda av våra baristor.</p></div>
+          <div class="item"><div class="top"><span class="nm">Te &amp; varm choklad</span></div><p class="ds">Lösviktste i flera sorter och varm choklad med grädde.</p></div>
+          <div class="item"><div class="top"><span class="nm">Alkoholfritt</span></div><p class="ds">Färskpressat, hemgjord lemonad, läsk samt alkoholfri öl &amp; bubbel.</p></div>
         </div>
-        <div class="dish-col">
-          <div class="dish-wide"><div class="row"><span class="n">Öl &amp; cider</span></div><div class="sub">Lokala favoriter på flaska och fat – perfekt till skagen i solen.</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Vin</span></div><div class="sub">Ett litet, välvalt sortiment på glas och flaska.</div></div>
-          <div class="dish-wide"><div class="row"><span class="n">Cocktails</span></div><div class="sub">Aperol Spritz och säsongens drinkar – vår sommarklassiker.</div></div>
+        <div class="col">
+          <div class="item"><div class="top"><span class="nm">Öl &amp; cider</span></div><p class="ds">Lokala favoriter på flaska och fat — perfekt till skagen i solen.</p></div>
+          <div class="item"><div class="top"><span class="nm">Vin</span></div><p class="ds">Ett litet, välvalt sortiment på glas och flaska.</p></div>
+          <div class="item"><div class="top"><span class="nm">Cocktails</span></div><p class="ds">Aperol Spritz och säsongens drinkar — vår sommarklassiker.</p></div>
         </div>
       </div>
     </div>
 
-    <p class="menu-note reveal">Menyn skiftar med säsongen. Fråga oss gärna om allergener – vi hjälper till.</p>
+    <p class="mnote reveal">Menyn skiftar med säsongen. Fråga oss gärna om allergener — vi hjälper till.</p>
   </div>
 </section>
 
 <!-- ============ LUNCH ============ -->
-<section class="lunch" id="lunch">
-  <div class="bg"><img src="https://rosenkafeet.se/wp-content/uploads/2025/04/10-1.jpg" alt="Räkmacka och kall dryck på Rosenkaféets uteservering" loading="lazy" decoding="async"></div>
-  <div class="wrap reveal">
-    <div class="eyebrow c">Måndag till fredag</div>
-    <h2>Veckans <em>trädgårdslunch</em></h2>
-    <p>Varje vecka lagar vi en lunch med säsongens råvaror och enkla smaker. Slå dig ner en stund, ät gott och ta en paus från vardagen. Ta gärna en kopp kaffe efter maten och njut av lugnet hos oss.</p>
+<section class="band" id="lunch">
+  <div class="bg"><img src="https://rosenkafeet.se/wp-content/uploads/2025/04/10-1.jpg" alt="Skagenmacka och kall dryck på Rosenkaféets uteservering" loading="lazy" decoding="async"></div>
+  <div class="narrow reveal">
+    <p class="kicker c">Måndag till fredag</p>
+    <h2 class="h-lg">Veckans <em>trädgårdslunch</em></h2>
+    <p class="lead">Varje vecka lagar vi en lunch med säsongens råvaror och enkla smaker. Slå dig ner en stund, ät gott och ta en paus från vardagen — och gärna en kopp kaffe efteråt.</p>
     <a href="mailto:info@rosenkafeet.se?subject=Fr%C3%A5ga%20om%20veckans%20lunch" class="btn btn-rose">Fråga om veckans lunch</a>
   </div>
 </section>
 
-<!-- ============ CARDS / FEST ============ -->
+<!-- ============ FEST ============ -->
 <section class="cards" id="fest">
   <div class="wrap">
-    <div class="cards-head reveal">
-      <div class="eyebrow c">Fira hos oss</div>
-      <h2>Där <em>minnen</em> skapas</h2>
-      <p>Letar ni efter en plats med charm, grönska och det lilla extra? Våra lokaler går att anpassa efter era önskemål – från sittande middagar till mingel i trädgården.</p>
+    <div class="chead reveal">
+      <p class="kicker c">Fira hos oss</p>
+      <h2 class="h-lg">Där <em>minnen</em> skapas</h2>
+      <p>Letar ni efter en plats med charm, grönska och det lilla extra? Våra lokaler går att anpassa efter era önskemål — från sittande middagar till mingel i trädgården.</p>
     </div>
 
     <div class="cgrid">
       <article class="card reveal">
-        <div class="im"><img src="https://rosenkafeet.se/wp-content/uploads/2025/04/IMG_2277-2.jpg" alt="Dukat för fest i trädgården vid Rosenkaféet" loading="lazy" decoding="async"></div>
+        <div class="im"><img src="https://rosenkafeet.se/wp-content/uploads/2025/04/IMG_2277-2.jpg" alt="Uppdukat för fest i trädgården vid Rosenkaféet" loading="lazy" decoding="async"></div>
         <div class="bd">
           <h3>Bröllop</h3>
-          <p>En vacker miljö, mat lagad från grunden och hjälp hela vägen. Sittande middag inne eller mingel bland rosorna – vi skräddarsyr dagen efter er vision.</p>
-          <a href="mailto:info@rosenkafeet.se?subject=F%C3%B6rfr%C3%A5gan%20br%C3%B6llop" class="lnk">Skicka förfrågan →</a>
+          <p>En vacker miljö, mat lagad från grunden och hjälp hela vägen. Sittande middag inne eller mingel bland rosorna — vi skräddarsyr dagen efter er vision.</p>
+          <a href="mailto:info@rosenkafeet.se?subject=F%C3%B6rfr%C3%A5gan%20br%C3%B6llop" class="arrowlink">Skicka förfrågan
+            <svg viewBox="0 0 20 8" fill="none"><path d="M0 4h18M14.5 1l3.5 3-3.5 3" stroke="currentColor" stroke-width="1.2"/></svg></a>
         </div>
       </article>
 
@@ -615,41 +712,43 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
         <div class="im"><img src="https://rosenkafeet.se/wp-content/uploads/2025/04/Aho-53-1.jpg" alt="Gäster som firar tillsammans inne på Rosenkaféet" loading="lazy" decoding="async"></div>
         <div class="bd">
           <h3>Fest &amp; student</h3>
-          <p>Födelsedag, studentmottagning eller bara ett bra skäl att samla folk. Vi fixar fika, buffé, snittar eller tårta – och ser till att allt flyter smidigt.</p>
-          <a href="mailto:info@rosenkafeet.se?subject=F%C3%B6rfr%C3%A5gan%20fest" class="lnk">Skicka förfrågan →</a>
+          <p>Födelsedag, studentmottagning eller bara ett bra skäl att samla folk. Vi fixar fika, buffé, snittar eller tårta — och ser till att allt flyter smidigt.</p>
+          <a href="mailto:info@rosenkafeet.se?subject=F%C3%B6rfr%C3%A5gan%20fest" class="arrowlink">Skicka förfrågan
+            <svg viewBox="0 0 20 8" fill="none"><path d="M0 4h18M14.5 1l3.5 3-3.5 3" stroke="currentColor" stroke-width="1.2"/></svg></a>
         </div>
       </article>
 
       <article class="card reveal">
-        <div class="im"><img src="https://rosenkafeet.se/wp-content/uploads/2025/04/14-1-1024x683.jpg" alt="Rosenkaféets lokaler i Trädgårdsföreningen" loading="lazy" decoding="async"></div>
+        <div class="im"><img src="https://rosenkafeet.se/wp-content/uploads/2025/04/14-1-1024x683.jpg" alt="Rosenkaféets lokaler sedda från parken" loading="lazy" decoding="async"></div>
         <div class="bd">
           <h3>Konferens &amp; möten</h3>
           <p>Ljus lokal, varm känsla och en park att sträcka på benen i. Ett möte här blir helt enkelt trevligare än ett i ett konferensrum.</p>
-          <a href="mailto:info@rosenkafeet.se?subject=F%C3%B6rfr%C3%A5gan%20konferens" class="lnk">Skicka förfrågan →</a>
+          <a href="mailto:info@rosenkafeet.se?subject=F%C3%B6rfr%C3%A5gan%20konferens" class="arrowlink">Skicka förfrågan
+            <svg viewBox="0 0 20 8" fill="none"><path d="M0 4h18M14.5 1l3.5 3-3.5 3" stroke="currentColor" stroke-width="1.2"/></svg></a>
         </div>
       </article>
     </div>
 
-    <div class="narrow reveal" style="margin-top:clamp(44px,6vw,68px);text-align:center;padding:clamp(30px,4vw,44px);background:var(--linen);border-radius:6px">
-      <h3 style="font-size:1.15rem;font-weight:400;margin-bottom:14px">Bra att veta</h3>
-      <p style="font-size:.94rem">Menypriser gäller från 40 personer – vid färre tillkommer lokalhyra. Vi behöver slutgiltigt antal gäster senast 4 arbetsdagar innan. Priserna är inklusive moms och menyer kan kombineras fritt.</p>
-      <a href="mailto:info@rosenkafeet.se?subject=Best%C3%A4llningsmeny" class="btn btn-out" style="margin-top:24px">Be om beställningsmenyn</a>
+    <div class="note reveal">
+      <h3>Bra att veta</h3>
+      <p>Menypriser gäller från 40 personer — vid färre tillkommer lokalhyra. Vi behöver slutgiltigt antal gäster senast 4 arbetsdagar innan. Priserna är inklusive moms och menyer kan kombineras fritt.</p>
+      <a href="mailto:info@rosenkafeet.se?subject=Best%C3%A4llningsmeny" class="btn btn-dark-line">Be om beställningsmenyn</a>
     </div>
   </div>
 </section>
 
 <!-- ============ GLASS ============ -->
-<section class="split" id="glass">
-  <div class="wrap split-grid rev">
+<section class="split rev" id="glass">
+  <div class="wrap grid">
     <div class="fig reveal">
       <img src="https://rosenkafeet.se/wp-content/uploads/2025/04/b3-1-1024x747.jpg" alt="Kaffe med latte art på Rosenkaféet" loading="lazy" decoding="async">
     </div>
     <div class="reveal">
-      <div class="eyebrow">Glass &amp; våffelkaféet</div>
-      <h2>Egengjorda våfflor<br>och <em>glass i parken</em></h2>
-      <p>Vid vårt lilla glass- och våffelkafé gräddar vi våfflor på beställning och skopar upp glass till den som är på promenad genom parken. Sylt, grädde och en solig bänk – det behövs inte mer.</p>
+      <p class="kicker">Glass &amp; våffelkaféet</p>
+      <h2 class="h-md">Egengjorda våfflor<br>och <em>glass i parken</em></h2>
+      <p>Vid vårt lilla glass- och våffelkafé gräddar vi våfflor på beställning och skopar upp glass till den som är på promenad genom parken. Sylt, grädde och en solig bänk — det behövs inte mer.</p>
       <p>Öppet under säsong, i takt med vädret.</p>
-      <div class="pills"><span>Nygräddat</span><span>Take away</span><span>Glass på strut</span></div>
+      <div class="chips"><span>Nygräddat</span><span>Take away</span><span>Glass på strut</span></div>
     </div>
   </div>
 </section>
@@ -657,9 +756,9 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
 <!-- ============ GRÖNT ============ -->
 <section class="values" id="gront">
   <div class="wrap">
-    <div class="narrow reveal" style="text-align:center;margin-bottom:clamp(40px,5vw,64px)">
-      <div class="eyebrow c">Vårt gröna val</div>
-      <h2 style="font-size:clamp(1.9rem,1.4rem + 2.4vw,3.2rem);font-weight:300">Det ska vara lätt<br>att göra <em style="font-style:italic;color:var(--rose)">rätt</em></h2>
+    <div class="vhead reveal">
+      <p class="kicker c">Vårt gröna val</p>
+      <h2 class="h-md">Det ska vara lätt<br>att göra <em>rätt</em></h2>
     </div>
     <div class="vgrid">
       <div class="v reveal">
@@ -668,7 +767,7 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
       </div>
       <div class="v reveal">
         <h3>Säsong &amp; närodlat</h3>
-        <p>Sortimentet följer säsongen. Gärna ekologiskt, gärna lokalproducerat – alltid råvaror vi själva tror på.</p>
+        <p>Sortimentet följer säsongen. Gärna ekologiskt, gärna lokalproducerat — alltid råvaror vi själva tror på.</p>
       </div>
       <div class="v reveal">
         <h3>Mindre avtryck</h3>
@@ -681,9 +780,9 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
 <!-- ============ GALLERI ============ -->
 <section class="gal">
   <div class="wrap">
-    <div class="narrow reveal" style="text-align:center;margin-bottom:clamp(34px,4vw,50px)">
-      <div class="eyebrow c">Glimtar</div>
-      <h2 style="font-size:clamp(1.8rem,1.4rem + 2vw,2.8rem);font-weight:300">En vanlig dag <em style="font-style:italic;color:var(--rose)">hos oss</em></h2>
+    <div class="ghead reveal">
+      <p class="kicker c">Glimtar</p>
+      <h2 class="h-md">En vanlig dag <em>hos oss</em></h2>
     </div>
     <div class="ggrid reveal">
       <figure class="t"><img src="https://rosenkafeet.se/wp-content/uploads/2025/04/DY2A2620-scaled.jpg" alt="Räkmacka serverad ute i trädgården" loading="lazy" decoding="async"></figure>
@@ -700,25 +799,25 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
 <section class="visit" id="hittahit">
   <div class="wrap vwrap">
     <div class="reveal">
-      <div class="eyebrow">Hitta hit</div>
-      <h2>Slussgatan 1<br><em>mitt i parken</em></h2>
-      <p>Har du några frågor? Tveka inte på att kontakta oss – vi svarar gärna om bord, allergier, större sällskap eller vad som helst.</p>
+      <p class="kicker">Hitta hit</p>
+      <h2 class="h-md">Slussgatan 1<br><em>mitt i parken</em></h2>
+      <p>Har du några frågor? Tveka inte på att kontakta oss — vi svarar gärna om bord, allergier, större sällskap eller vad som helst.</p>
 
       <div class="info">
-        <div class="irow"><div class="k">Adress</div><div class="val">Slussgatan 1, 411 06 Göteborg<small>Göteborgs Trädgårdsförening</small></div></div>
-        <div class="irow"><div class="k">Öppettider</div><div class="val">Alla dagar 10.00–19.30<small>Maj–augusti. Övriga månader, se Instagram.</small></div></div>
-        <div class="irow"><div class="k">Telefon</div><div class="val"><a href="tel:+4631802970">031–80 29 70</a></div></div>
-        <div class="irow"><div class="k">E-post</div><div class="val"><a href="mailto:info@rosenkafeet.se">info@rosenkafeet.se</a></div></div>
-        <div class="irow"><div class="k">Kollektivt</div><div class="val">Drottningtorget / Centralstationen<small>Ca 5 minuters promenad</small></div></div>
+        <div class="row"><div class="k">Adress</div><div class="v2">Slussgatan 1, 411 06 Göteborg<small>Göteborgs Trädgårdsförening</small></div></div>
+        <div class="row"><div class="k">Öppettider</div><div class="v2">Alla dagar 10.00–19.30<small>Maj–augusti. Övriga månader, se Instagram.</small></div></div>
+        <div class="row"><div class="k">Telefon</div><div class="v2"><a href="tel:+4631802970">031–80 29 70</a></div></div>
+        <div class="row"><div class="k">E-post</div><div class="v2"><a href="mailto:info@rosenkafeet.se">info@rosenkafeet.se</a></div></div>
+        <div class="row"><div class="k">Kollektivt</div><div class="v2">Drottningtorget / Centralen<small>Ca 5 minuters promenad</small></div></div>
       </div>
 
-      <div class="visit-btns">
+      <div class="vbtns">
         <a href="tel:+4631802970" class="btn btn-rose">Ring oss</a>
-        <a href="https://maps.google.com/?q=Rosenkaf%C3%A9et,+Slussgatan+1,+411+06+G%C3%B6teborg" target="_blank" rel="noopener" class="btn btn-ghost">Vägbeskrivning</a>
+        <a href="https://maps.google.com/?q=Rosenkaf%C3%A9et,+Slussgatan+1,+411+06+G%C3%B6teborg" target="_blank" rel="noopener" class="btn btn-line">Vägbeskrivning</a>
       </div>
     </div>
 
-    <div class="mapbox reveal">
+    <div class="map reveal">
       <iframe title="Karta till Rosenkaféet, Slussgatan 1, Göteborg" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps?q=Slussgatan%201,%20411%2006%20G%C3%B6teborg&output=embed"></iframe>
     </div>
@@ -728,12 +827,12 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap fgrid">
-    <div class="fbrand">
+    <div class="fb">
       <b>Rosenkaféet</b>
-      <p>Ett mysigt café och kök mitt i Göteborgs Trädgårdsförening. Frukost, fika, lunch och fest – bland rosorna.</p>
-      <div class="socials">
+      <p>Ett café och kök mitt i Göteborgs Trädgårdsförening. Frukost, fika, lunch och fest — bland rosorna.</p>
+      <div class="soc">
         <a href="https://www.instagram.com/rosenkafeetgbg/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
         </a>
         <a href="https://www.tiktok.com/@rosenkafeetgbg" target="_blank" rel="noopener" aria-label="TikTok">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-1.79-2.46V9.76a5.86 5.86 0 1 0 4.88 5.77V9.01a7.35 7.35 0 0 0 4.29 1.38V7.3a4.29 4.29 0 0 1-3.23-1.48z"/></svg>
@@ -741,7 +840,7 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
       </div>
     </div>
 
-    <div class="fcol">
+    <div class="fc">
       <h4>Meny</h4>
       <a href="#meny">Fika &amp; bakverk</a>
       <a href="#meny">Smörgåsar</a>
@@ -750,7 +849,7 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
       <a href="#glass">Glass &amp; våfflor</a>
     </div>
 
-    <div class="fcol">
+    <div class="fc">
       <h4>Hos oss</h4>
       <a href="#fest">Bröllop &amp; fest</a>
       <a href="#fest">Konferens</a>
@@ -767,21 +866,21 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
 </footer>
 
 <!-- ============ MOBILBAR ============ -->
-<nav class="mbar">
+<nav class="mbar" aria-label="Snabbval">
   <a href="tel:+4631802970">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
     Ring
   </a>
   <a href="#meny">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3h13v18H3z"/><path d="M6 7h7M6 11h7M6 15h4"/><path d="M16 8h5v13h-5"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3.5 3h12v18h-12z"/><path d="M6.5 7.5h6M6.5 11.5h6M6.5 15.5h3.5"/><path d="M15.5 8h5v13h-5"/></svg>
     Meny
   </a>
   <a href="#hittahit">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
     Hitta hit
   </a>
   <a href="mailto:info@rosenkafeet.se?subject=Bokningsf%C3%B6rfr%C3%A5gan" class="hi">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7.2 9 6 9-6"/></svg>
     Boka
   </a>
 </nav>
@@ -789,39 +888,45 @@ footer{background:var(--green-dk);color:rgba(255,255,255,.55);padding:0 0 clamp(
 <script>
 (function(){
   var hd=document.getElementById('hd');
-  var onScroll=function(){ hd.classList.toggle('solid', window.scrollY>60); };
-  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+  function onScroll(){ hd.classList.toggle('solid', window.scrollY>50); }
+  onScroll(); addEventListener('scroll',onScroll,{passive:true});
 
-  /* mobilmeny */
-  var b=document.getElementById('burger'), nav=document.getElementById('nav');
-  b.addEventListener('click',function(){ document.body.classList.toggle('menu-open'); });
-  nav.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click',function(){ document.body.classList.remove('menu-open'); });
+  /* mobil-drawer */
+  var b=document.getElementById('burger'), dn=document.getElementById('dnav');
+  function close(){ document.body.classList.remove('open'); b.setAttribute('aria-expanded','false'); }
+  b.addEventListener('click',function(){
+    var o=document.body.classList.toggle('open');
+    b.setAttribute('aria-expanded', o?'true':'false');
   });
-  nav.querySelectorAll('.top').forEach(function(t){
-    t.addEventListener('click',function(e){
-      if(window.innerWidth<=900){ e.preventDefault(); t.parentElement.classList.toggle('open'); }
+  dn.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',close); });
+  dn.querySelectorAll('button.lk2').forEach(function(t){
+    t.addEventListener('click',function(){
+      var li=t.parentElement, was=li.classList.contains('on');
+      dn.querySelectorAll('li.on').forEach(function(x){ x.classList.remove('on'); });
+      if(!was) li.classList.add('on');
     });
   });
+  addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
 
   /* menytabbar */
-  var tabs=document.querySelectorAll('.tab');
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
   tabs.forEach(function(t){
     t.addEventListener('click',function(){
-      tabs.forEach(function(x){x.classList.remove('on')});
-      document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});
+      tabs.forEach(function(x){ x.classList.remove('on'); });
+      document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('on'); });
       t.classList.add('on');
       var el=document.getElementById('p-'+t.dataset.t);
       el.classList.add('on');
-      el.querySelectorAll('.reveal').forEach(function(r){r.classList.add('in')});
+      el.querySelectorAll('.reveal').forEach(function(r){ r.classList.add('in'); });
+      t.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});
     });
   });
 
   /* scroll reveal */
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(en){
-      en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+      en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{threshold:.1,rootMargin:'0px 0px -6% 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
   } else {
     document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
